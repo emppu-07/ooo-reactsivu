@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Death from "./death"
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import voidfiend from './assets/voidfiendling.gif'
 import ingame from './assets/ingame.png'
 import inmenu from './assets/inmenu.png'
@@ -9,7 +9,7 @@ import inmenu from './assets/inmenu.png'
 function App() {
   return (
     <body className='max-w-[56.25rem] mx-auto px-6'>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={
             <div className="min-h-screen flex flex-col">
@@ -75,7 +75,7 @@ function App() {
           } />
           <Route path='/death' element={<Death />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </body>
   )
 }
