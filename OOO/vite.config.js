@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  base: "https://emppu-07.github.io/ooo-reactsivu/",
 })
